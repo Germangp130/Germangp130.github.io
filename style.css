@@ -1,0 +1,188 @@
+/* Reset y base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-image: url('https://www.travelreport.mx/wp-content/uploads/2018/11/mejores-platillos-de-Texas-Jaime-Hudson-Visit-Texas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #f5c518;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #f5c518;
+    color: #000;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    color: #fff;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .seccion {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    border-radius: 15px;
+  }
+  
+  .seccion h2 {
+    font-size: 2rem;
+    color: #f5c518;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .buscador {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buscador input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  .lista-platillos {
+    list-style: none;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 0;
+  }
+  
+  .lista-platillos li {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lista-platillos button {
+    padding: 6px 12px;
+    background-color: #f5c518;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .carrito {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #items-carrito li {
+    margin: 5px 0;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .galeria img {
+    width: 300px;
+    max-width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .contenedor-footer p {
+    margin: 8px 0;
+    color: #ddd;
+  }
+  
+  .redes-sociales a {
+    color: #f5c518;
+    margin: 0 10px;
+    font-size: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      display: none;
+    }
+  
+    .navbar ul.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+      margin: 10px auto;
+    }
+  } 
+  
